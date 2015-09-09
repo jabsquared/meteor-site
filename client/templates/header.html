@@ -1,17 +1,25 @@
 <template name="header">
   <header class="header" id="top">
     <div class="text-vertical-center">
-      <!-- <h1>jabSquared</h1> -->
-      <img src="../img/logo.png" alt="jabSquared" />
+<!-- <h1>jabSquared</h1> -->
+      <img alt="jabSquared" src="../img/logo.png"/>
       <h3>Let's Start!</h3>
       <br>
-      <form>
-        <div class="form-group">
-          <!-- <input class="form-control"  placeholder="Write out your idea for an app!" type="text"> -->
-          <input name="idea" type="text" class="form-control input-lg idea-input" placeholder="Tell us about your app idea...">
-          <!-- <input name="email" class="form-control email"  placeholder="Enter your email address." type="email"> -->
+      <form class="" role="form">
+<!-- <div class="form-group col-lg-8">
+          <input name="idea" type="text" class="form-control input-lg" placeholder="Tell us about your app idea...">
         </div>
-        <!-- <button class="btn btn-light btn-lg" type="submit">Submit Idea</button> -->
+        <div class="form-group col-lg-2">
+          <input name="email" class="form-control input-lg"  placeholder="Email (optional)" type="email">
+        </div> -->
+        <div class="row">
+          <div class="col-xs-8" style="padding-right: 0px">
+            <input name="idea" type="text" class="form-control input-lg" placeholder="Tell us about your app idea...">
+          </div>
+          <div class="col-xs-4">
+            <input name="email" class="form-control input-lg"  placeholder="Email (optional)" type="email">
+          </div>
+        </div>
       </form>
       <p>
         or
