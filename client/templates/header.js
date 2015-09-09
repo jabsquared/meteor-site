@@ -7,24 +7,31 @@ Template.header.events({
     event.preventDefault();
 
     // get the data we need from the form
-    var newIdea = {
-      idea: event.target.idea.value,
-      email: event.target.email.value
-    };
+    var idea = event.target.idea.value
 
-    function backUp() {
-      $("#success-alert").fadeTo(2000, 500).slideUp(500, function() {
-          //  $("#success-alert").hide();
-           console.log('Done!');
-      });
+    function showAlert() {
+      $("#success-alert").show();
+          $("#success-alert").fadeTo(2000, 500).slideUp(500, function() {
+            //  $("#success-alert").hide();
+            console.log('Done!');
+            event.target.idea.value = '';
+          });
     }
+
+    Meteor.call('addIdea', idea, showAlert);
 
     // create the new idea
     // Ideas.insert(newIdea, function(error, _id) {
     //   if (_id !== null) {
-    // $("#success-alert").show();
-    $("#success-alert").fadeTo(2000, 500).slideDown(5000, backUp);
+    //     // $("#success-alert").show();
+    //     $("#success-alert").fadeTo(2000, 500).slideUp(500, function() {
+    //       //  $("#success-alert").hide();
+    //       console.log('Done!');
+    //       event.target.idea.value = '';
+    //     });
     //   }
     // });
+
+
   }
 });
