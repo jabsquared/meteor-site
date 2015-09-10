@@ -57,7 +57,7 @@ body {
 }
 
 body {
-  font-family: 'Source Code Pro' ,"Helvetica Neue",Helvetica,Arial, sans-serif;
+  font-family: 'Source Code Pro' ,'Helvetica Neue',Helvetica,Arial, sans-serif;
 }
 
 .text-vertical-center {
@@ -72,6 +72,7 @@ body {
   font-size: 4.5em;
   font-weight: 700;
 }
+
 
 /* Custom Button Styles */
 .btn:hover,
@@ -114,7 +115,10 @@ body {
 
 /* Custom Horizontal Rule */
 hr.small {
-  max-width: 100px;
+  width: 180px;
+  max-width: 18vw;
+  min-width: 108px;
+  border-color: inherit;
 }
 
 
@@ -261,6 +265,7 @@ i.fa-stack-1x {
   color: $orange;
 }
 
+
 /* Services */
 .services {
   padding: 50px 0;
@@ -318,12 +323,12 @@ i.fa-stack-1x {
 
 /* Map */
 .map {
-  height: 500px;
+  height: 450px;
 }
 
 @media(max-width:768px) {
   .map {
-    height: 75%;
+    height: 72%;
   }
 }
 
@@ -331,4 +336,14 @@ i.fa-stack-1x {
 /* Footer */
 footer {
   padding: 100px 0;
+}
+
+a {
+  color: $orange;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: $white;
 }
