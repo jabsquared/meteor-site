@@ -295,6 +295,10 @@ i.fa-stack-1x {
 /* Portfolio */
 .portfolio {
   padding: 50px 0;
+  background-color: $white;
+  h2 {
+    color: $black;
+  }
 }
 
 .portfolio-item {
