@@ -1,3 +1,4 @@
+'use strict';
 Template.header.events({
 
   // handle the form submission
@@ -11,11 +12,13 @@ Template.header.events({
     var idea = event.target.idea.value;
 
     function showAlert() {
+      event.target.idea.value = '';
       $('#success-alert').show();
       $('#success-alert').fadeTo(2000, 500).slideUp(500, function() {
         //  $("#success-alert").hide();
         console.log('Done!');
-        event.target.idea.value = '';
+
+        // event.target.idea.value = '';
       });
     }
 
