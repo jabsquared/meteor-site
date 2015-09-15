@@ -1,0 +1,15 @@
+@import "../../global/variables";
+/* Footer */
+footer {
+  padding: 100px 0;
+}
+
+a {
+  color: $orange;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: $white;
+}
