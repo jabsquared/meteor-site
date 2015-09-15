@@ -104,6 +104,7 @@
     "Random": false,
     "_": false,
     "$": false,
-    "Router": false
+    "Router": false,
+    "Ideas" : true
   }
 }
