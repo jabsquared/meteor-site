@@ -18,6 +18,9 @@
   <!-- Services -->
   {{> services}}
 
+  <!-- More Service Info -->
+  {{> webdev}}
+
   <!-- Callout -->
   <aside class="callout">
     <div class="text-vertical-center">
@@ -65,6 +68,13 @@
   <script>
     $("#success-alert").hide();
     // $("#success-alert").slideUp();
+
+    //JQuery for More Service Info Sections
+    $("#test").click(function () {
+      $('#webdev').slideToggle('slide');
+   });
+
+
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
       e.preventDefault();
