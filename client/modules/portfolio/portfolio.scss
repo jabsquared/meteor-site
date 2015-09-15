@@ -11,8 +11,9 @@
 // }
 //
 .padded-multiline span {
-  background-color: black;
-  color: #fff;
+  border-radius: 45px;
+  background-color: $black;
+  // color: #fff;
   display: inline;
   padding: 0.5rem;
 
