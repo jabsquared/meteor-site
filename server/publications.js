@@ -1,3 +1,4 @@
-Meteor.publish('ideas', function(){
+'use strict';
+Meteor.publish('ideas', function() {
   return Ideas.find();
 });

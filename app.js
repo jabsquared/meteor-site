@@ -1,3 +1,4 @@
+'use strict';
 Meteor.methods({
   addIdea: function(text, onSuccess) {
     // Validations go here
@@ -12,5 +13,5 @@ Meteor.methods({
         }
       }
     });
-  }
+  },
 });
