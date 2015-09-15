@@ -1,3 +1,4 @@
+'use strict';
 Template.header.events({
 
   // handle the form submission
@@ -20,6 +21,7 @@ Template.header.events({
 
     Meteor.call('addIdea', idea, showAlert);
     event.target.idea.value = '';
+
     // create the new idea
     // Ideas.insert(newIdea, function(error, _id) {
     //   if (_id !== null) {
