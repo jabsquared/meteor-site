@@ -1,4 +1,26 @@
 @import "../../global/variables";
+
+//Textoverlay effect
+
+// .padded-multiline {
+//   background: url(http://i2.cdn.turner.com/cnnnext/dam/assets/111017060721-giant-panda-bamboo-story-top.jpg);
+//   line-height: 1.4;
+//   padding: 120px 50px 50px 50px;
+//   width: 400px;
+//   margin: 20px auto;
+// }
+//
+.padded-multiline span {
+  background-color: black;
+  color: #fff;
+  display: inline;
+  padding: 0.5rem;
+
+  /* Needs prefixing */
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
 /* Portfolio */
 .portfolio {
   padding: 50px 0;
