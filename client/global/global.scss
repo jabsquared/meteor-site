@@ -126,6 +126,29 @@ hr.small {
     font-size: 12vw;
   }
 }
-.contrast {
+.contrast h2  {
+  color: $white;
+}
+.contrast h3 {
   color: $black;
+}
+.contrast img {
+  background-color: $white;
+  border-radius: 100px;
+  border-style: none;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+.call-to-action {
+  padding: 50px 0;
+  background-color: $orange;
+}
+
+.call-to-action .btn {
+  margin: 10px;
+}
+.whoweare {
+  padding: 50px 0;
+  background-color: $black;
 }
