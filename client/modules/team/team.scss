@@ -4,15 +4,19 @@
   color: $white;
   padding: 45px 0;
 
+  .icon {
+    // float: right;
+    width: 30vw;
+    // height: 45px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
   a {
     text-decoration: none;
-    display: inline-grid;
-    .item {
-      display: inline-block;
-    }
 
-    span.caption {
-      display: block;
+    p {
+      height: 27px;
     }
   }
 
@@ -31,7 +35,10 @@
   img:hover,
   img:active,
   img:focus {
-    height: 135px;
-    width: 135px;
+
+    // opacity: 0.72;
+    // box-shadow: 1.8px 1.8px 1.8px $white;
+    // height: 135px;
+    // width: 135px;
   }
 }
