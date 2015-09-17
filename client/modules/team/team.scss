@@ -1,0 +1,37 @@
+@import "../../global/variables";
+
+.team {
+  color: $white;
+  padding: 45px 0;
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    // background-color: $black;
+    border-radius: 99px;
+    border-style: none;
+    height: 99px;
+    width: 99px;
+    margin: 9px;
+    // cursor: pointer;
+  }
+
+  img:hover,
+  img:active,
+  img:focus {
+    height: 135px;
+    width: 135px;
+  }
+}
+
+
+//
+// .contrast h2 {
+//   color: $white;
+// }
+//
+// .contrast h3 {
+//   color: $black;
+// }
