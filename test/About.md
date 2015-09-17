@@ -1,7 +1,7 @@
 # Buzz world
 
-Committed
 Ambitious
+Committed
 Hungry
 Hustle
 Energetic
