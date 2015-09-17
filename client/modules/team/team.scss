@@ -6,15 +6,25 @@
 
   a {
     text-decoration: none;
+    display: inline-grid;
+    .item {
+      display: inline-block;
+    }
+
+    span.caption {
+      display: block;
+    }
   }
 
   img {
+
     // background-color: $black;
     border-radius: 99px;
     border-style: none;
     height: 99px;
     width: 99px;
     margin: 9px;
+
     // cursor: pointer;
   }
 
@@ -25,13 +35,3 @@
     width: 135px;
   }
 }
-
-
-//
-// .contrast h2 {
-//   color: $white;
-// }
-//
-// .contrast h3 {
-//   color: $black;
-// }
