@@ -92,7 +92,17 @@ hr.small {
 
 /* Alert */
 .alert {
-  position: inherit;
+  display: none;
+  position: fixed;
+  width: 100vw;
+  text-align: center;
+  z-index: 999;
+}
+
+.alert-success{
+  background-color: $orange;
+  color: $black;
+  border-radius: 0;
 }
 
 /* Callout */

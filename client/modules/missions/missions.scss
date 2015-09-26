@@ -1,24 +1,18 @@
 @import "../../global/variables";
 /* Services */
 .missions {
-  padding: 50px 0;
+  padding: 45px 0;
   background-color: $white;
   color: $black;
 }
 
 .mission-item {
-  margin-bottom: 30px;
-}
+  margin-bottom: 27px;
 
-#webdev {
-  width: 100%;
+  p {
+    display: block;
+    text-align: justify;
+    text-justify: inter-word;
 
-  // height: 400px;
-  // background: #ccc;
-  // position: relative;
-  overflow: hidden;
-
-  // right: 20px;
-  // top: 80px;
-  display: none;
+  }
 }

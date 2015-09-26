@@ -12,15 +12,11 @@ Template.header.events({
     var idea = event.target.idea.value;
 
     function showAlert() {
-      $('#success-alert').show();
-      $('#success-alert').fadeTo(2000, 500).slideUp(500, function() {
-        //  $("#success-alert").hide();
-        console.log('Done!');
-      });
+      $('#success-alert').fadeIn(900).delay(900).fadeOut(900);
     }
 
     Meteor.call('addIdea', idea, showAlert);
-    event.target.idea.value = '';
+    // event.target.idea.value = '';
 
     // create the new idea
     // Ideas.insert(newIdea, function(error, _id) {

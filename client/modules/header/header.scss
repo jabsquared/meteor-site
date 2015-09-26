@@ -13,9 +13,10 @@
   // background-size: cover;
   // -o-background-size: cover;
   img {
-    width: 18vw;
-    min-width: 117px;
-
+    width: 100%;
+    min-width: 90px;
+    max-width: 13.5vw;
+    // max-width: 180px;
     // top: 50%;
   }
 
