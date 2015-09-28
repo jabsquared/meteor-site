@@ -117,6 +117,10 @@ hr.small {
   height: 450px;
 }
 
+.map iframe{
+    pointer-events: none;
+}
+
 @media(max-width:768px) {
   .map {
     height: 72%;
