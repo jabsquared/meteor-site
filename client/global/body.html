@@ -5,33 +5,36 @@
     Great idea! Please click <b>Learn More!</b>
   </div>
 
-  <!-- Navigation -->
+<!-- Navigation -->
   {{> nav}}
 
-  <!-- Header -->
+<!-- Header -->
   {{> header}}
 
   <!-- About -->
   {{> about}}
 
-  <!-- Missions -->
+<!-- Missions -->
   {{> missions}}
 
-  <!-- Callout -->
+<!-- Callout -->
   <aside class="callout">
     <div class="text-vertical-center">
       <h1>
         We
         <b class="text-primary">
           value
-        </b> and
+        </b>
+        and
         <b class="text-primary">
           respect
         </b>
-        <br> your
+        <br>
+        your
         <b class="text-primary">
           time
-        </b> and
+        </b>
+        and
         <br>
         <b class="text-primary">
           money
@@ -40,13 +43,13 @@
     </div>
   </aside>
 
-  <!-- team -->
+<!-- team -->
   {{> team}}
 
-  <!-- Portfolio -->
+<!-- Portfolio -->
   {{> portfolio}}
 
-  <!-- Call to Action -->
+<!-- Call to Action -->
   <aside class="call-to-action">
     <div class="container">
       <div class="row">
@@ -54,35 +57,31 @@
           <h2>
             We are listening
           </h2>
-          <!-- <a class="btn btn-lg btn-light" href="#">Click Me!</a> -->
+<!-- <a class="btn btn-lg btn-light" href="#">Click Me!</a> -->
           <a class="btn btn-lg btn-dark" href="#footer">Contact Us</a>
 
-          <!-- <a class="btn btn-lg btn-light" href="teamjab/teamjab.html">Click Me!</a> -->
+<!-- <a class="btn btn-lg btn-light" href="teamjab/teamjab.html">Click Me!</a> -->
 
         </div>
       </div>
     </div>
   </aside>
 
-
-
-
-
-  <!-- Map -->
+<!-- Map -->
   <section class="map">
-    <!-- <iframe frameborder="0" height="100%" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed" width="100%"></iframe> -->
-    <iframe frameborder="0" width="100%" height="100%" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86590.61483391012!2d-122.2048925!3d47.2956455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54905876323cc865%3A0x96a0cd5e9fbe32fd!2sAuburn%2C+WA!5e0!3m2!1sen!2sus!4v1441787602035"></iframe>
+<!-- <iframe frameborder="0" height="100%" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed" width="100%"></iframe> -->
+    <iframe frameborder="0" height="100%" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86590.61483391012!2d-122.2048925!3d47.2956455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54905876323cc865%3A0x96a0cd5e9fbe32fd!2sAuburn%2C+WA!5e0!3m2!1sen!2sus!4v1441787602035" width="100%"></iframe>
     <br/>
     <small>
       <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86590.61483391012!2d-122.2048925!3d47.2956455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54905876323cc865%3A0x96a0cd5e9fbe32fd!2sAuburn%2C+WA!5e0!3m2!1sen!2sus!4v1441787602035"></a>
     </small>
-    <!-- </iframe> -->
+<!-- </iframe> -->
   </section>
 
-  <!-- Footer -->
+<!-- Footer -->
   {{> footer}}
 
-  <!-- Custom Theme JavaScript -->
+<!-- Custom Theme JavaScript -->
   <script>
     // $('#success-alert').fadeOut(0);
     // $("#success-alert").hide();
@@ -90,33 +89,72 @@
     // $("#success-alert").slideUp();
 
     // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-      e.preventDefault();
-      $("#sidebar-wrapper").toggleClass("active");
-    });
+    $("#menu-close")
+      .click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+      });
 
     // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-      e.preventDefault();
-      $("#sidebar-wrapper").toggleClass("active");
-    });
+    $("#menu-toggle")
+      .click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+      });
 
     // Scrolls to the selected menu item on the page
     $(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+      $('a[href*=#]:not([href=#])')
+        .click(function() {
+          if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
+            var target = $(this.hash);
+            target = target.length
+              ? target
+              : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset()
+                  .top
+              }, 1000);
+              return false;
+            }
           }
-        }
-      });
+        });
     });
+
+    //Enable map scroll on click
+    // $('.map')
+    //   .click(function() {
+    //     $('.map iframe').css("pointer-events", "auto");
+    //   });
+
+    // Disable scroll zooming and bind back the click event
+    var onMapMouseleaveHandler = function(event) {
+      var that = $(this);
+
+      that.on('click', onMapClickHandler);
+      that.off('mouseleave', onMapMouseleaveHandler);
+      that.find('iframe')
+        .css("pointer-events", "none");
+    }
+
+    var onMapClickHandler = function(event) {
+      var that = $(this);
+
+    // Disable the click handler until the user leaves the map area
+      that.off('click', onMapClickHandler);
+
+    // Enable scrolling zoom
+      that.find('iframe')
+        .css("pointer-events", "auto");
+
+    // Handle the mouse leave event
+      that.on('mouseleave', onMapMouseleaveHandler);
+    }
+
+    // Enable map zooming with mouse scroll when the user clicks the map
+    $('.map').on('click', onMapClickHandler);
 
     // Listen for enter key to submit idea form
     // $('.idea-input').keydown(function(event) {
